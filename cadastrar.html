@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-type" content="text/html">
+
+    <title>CADASTRAR</title>
+
+    <link rel="stylesheet" href="_css/cadastrar.css">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+
+</head>
+<body>
+
+    <div id="interface">
+
+                CADASTRO DE ESTAGIÁRIOS
+                <br>
+                <br>
+                <form method="post" id="fContatos" action="inserir.php">
+
+                    <fieldset id="usuario">
+
+                        <legend>DIGITE ABAIXO OS DADOS DO ESTAGIÁRIO:</legend>
+                        
+                        <p><label for="cNome">Nome: <input type="text" name="tNome" id="cNome" size="40" maxlength="40" placeholder="Nome Completo" required></label></p>
+                        <p><label for="cEmail">E-mail: <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="Email" required></label></p>
+                        <p><label for="cTel">Telefone: <input type="tel" name="tTel" id="cTel" size="15" maxlength="15" placeholder="Telefone" required></label></p>
+
+                    </fieldset>
+
+                    <br>
+
+                    <input type="submit" value="INCLUIR ESTAGIÁRIO NA LISTA"><br><br><br>
+                    
+
+                </form>
+
+                <form method="post" id="fContatos" action="tela_principal.html">
+                    <input type="submit" value="VOLTAR A LISTA SEM INCLUIR">
+                </form>
+
+    </div>
+</body>
+</html>
